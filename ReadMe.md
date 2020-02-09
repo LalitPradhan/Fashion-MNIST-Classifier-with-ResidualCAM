@@ -12,7 +12,7 @@ This library does object classification on Fashion MNIST dataset and creates Cla
 - Matplotlib (>=3.0.3)
 
 ## Training Circumstances
-- All models were trained on a Nvidia 1080 Ti 12 GB GPU with 16 GB CPU memory on Ubuntu 16.04 annd CUDA 9.2
+- All models were trained on a Nvidia 1080 Ti 12 GB GPU with 16 GB CPU memory on Ubuntu 16.04 and CUDA 9.2
 - Used default Pytorch Dataloader for loading [Fashion-MNIST dataset](https://pytorch.org/docs/stable/torchvision/datasets.html#torchvision.datasets.FashionMNIST)
 
 ## Description of Architecture
