@@ -24,9 +24,9 @@ The dot product between the GAP output and features extracted isn't a part of th
 
 ## Other architectures evaluated during the challenge. All hyperparameters were tested against shallower network as it was faster to train.
  - Three shallower networks were trained. It was observed that with increase in depth of network the accuracy decreases with input image size 28x28. Also increasing the number of hidden units in FC increases the accuracy. The best accuracy for just the classifier without residual connection with GAP layer was 91.37%. The accuracy increases to 91.50% when combined with GAP layer because of the auxiliary learning task in the shallower network.
- 	a) With 2 Conv and 2 FC 
- 	b) With 2 Conv and 3 FC
- 	c) With 3 Conv and 3 FC
+ 	- a) With 2 Conv and 2 FC 
+ 	- b) With 2 Conv and 3 FC
+ 	- c) With 3 Conv and 3 FC
  - Random erasing and horizontal/ vertical flips were introduced into the training dataset. Contrary to claims in the paper and my previous experience with larger input images, the accuracy dropped on introducing the augmentations which could be explained due to small input size. Randomly erasing pixels in smaller input images reduced a greater percentage of pixels as compared to larger images which probably makes the input data very noisy. The reason behind selection of Random Erasing Augmentation in the VGG16 network is due to the proven accuracy in the [SOTA](https://arxiv.org/pdf/1708.04896v2.pdf) implementation of Fashion-MNIST which explains how it generalizes better with occlusions leading to better robust models during training which prevent over fitting.
  - Introducing batch norm improves the training speed. Batchnorm and dropout reduces the accuracy in shallower networks, the reasons for which as of now is unclear. In deeper networks like the VGG it improves the accuracy and generalizes better in accordance to the respective papers for [Batchnorm](https://arxiv.org/pdf/1502.03167.pdf) and [Dropout](https://dl.acm.org/doi/pdf/10.5555/2627435.2670313?download=true).
  - Cross entropy loss performs better than MSE loss. A variant of Class Balanced loss based on Focal loss and Multimargin loss performed poorly.
