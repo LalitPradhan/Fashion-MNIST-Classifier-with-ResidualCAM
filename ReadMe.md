@@ -1,4 +1,4 @@
-# CAM with Residual connection for multi task learning
+# VGG classifier with Residual connection from CAM network outputs as Auxiliary task
 Click on [Demo Youtube Link](https://www.youtube.com/watch?v=0Xbr2bHcrUo)
 This library does object classification on Fashion MNIST dataset and creates Class Activation Maps to locate the discriminating pixels of an apparel.
 
