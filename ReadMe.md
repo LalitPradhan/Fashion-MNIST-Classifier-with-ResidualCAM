@@ -37,7 +37,7 @@ The dot product between the GAP output and features extracted isn't a part of th
  - All Loss, Accuracy, Classwise accuracy, precision, recall and F1 scores are logged as plot in the model/<model name> folders.
  - The best classifier is chosen based on the best f1 score calculated weighted over classes.
  - Initializing with Kaiming he normal increases the accuracy.
- - For the proposed architecture, the [original VGG weights](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth) were used initialization for VGG layers and Kaiming normal for the new layers/
+ - For the proposed architecture, the [original VGG weights](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth) were used initializing the VGG layers and Kaiming normal for the new layers.
 
 
 The training summary of the architecture proposed above is as follows:
