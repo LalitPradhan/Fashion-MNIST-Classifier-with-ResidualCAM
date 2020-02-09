@@ -1,0 +1,620 @@
+Without Normalization
+Training complete in 7m 4s
+Best val Acc: 0.907611
+Best Classwise Accuracy:  {'Ankle boot': 0.966343411294923, 'Sneaker': 0.9595687331536388, 'Bag': 0.9792576419213974, 'Dress': 0.9157716223855286, 'Pullover': 0.8414634146341463, 'Coat': 0.8584527220630372, 'Shirt': 0.773109243697479, 'Sandal': 0.9663865546218487, 'T-shirt/top': 0.8396328293736501, 'Trouser': 0.9741758241758242}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.86      0.84      0.85      1852
+     Trouser       0.99      0.97      0.98      1820
+    Pullover       0.87      0.84      0.86      1804
+       Dress       0.91      0.92      0.91      1769
+        Coat       0.86      0.86      0.86      1745
+      Sandal       0.98      0.97      0.97      1785
+       Shirt       0.72      0.77      0.75      1785
+     Sneaker       0.96      0.96      0.96      1855
+         Bag       0.98      0.98      0.98      1832
+  Ankle boot       0.96      0.97      0.96      1753
+
+   micro avg       0.91      0.91      0.91     18000
+   macro avg       0.91      0.91      0.91     18000
+weighted avg       0.91      0.91      0.91     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.86      0.84      0.85      1000
+     Trouser       0.99      0.97      0.98      1000
+    Pullover       0.86      0.84      0.85      1000
+       Dress       0.90      0.90      0.90      1000
+        Coat       0.84      0.82      0.83      1000
+      Sandal       0.98      0.97      0.98      1000
+       Shirt       0.70      0.75      0.73      1000
+     Sneaker       0.94      0.96      0.95      1000
+         Bag       0.97      0.98      0.97      1000
+  Ankle boot       0.97      0.96      0.96      1000
+
+   micro avg       0.90      0.90      0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+test Acc: 0.9001
+class wise accuracy: {'Ankle boot': 0.958, 'Sneaker': 0.965, 'Bag': 0.977, 'Dress': 0.9, 'Pullover': 0.841, 'Coat': 0.819, 'Shirt': 0.751, 'Sandal': 0.973, 'T-shirt/top': 0.843, 'Trouser': 0.974}
+
+
+
+
+With Normalization
+Training complete in 7m 15s
+Best val Acc: 0.916778
+Best Classwise Accuracy:  {'Pullover': 0.8769146608315098, 'Coat': 0.8469914040114613, 'Trouser': 0.9799240368963646, 'Dress': 0.931323283082077, 'Sneaker': 0.9632107023411371, 'Sandal': 0.979741136747327, 'Shirt': 0.7700386954118298, 'T-shirt/top': 0.874585635359116, 'Bag': 0.9767570558937465, 'Ankle boot': 0.9671492204899778}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.87      0.87      0.87      1810
+     Trouser       1.00      0.98      0.99      1843
+    Pullover       0.87      0.88      0.87      1828
+       Dress       0.90      0.93      0.92      1791
+        Coat       0.86      0.85      0.86      1745
+      Sandal       0.98      0.98      0.98      1777
+       Shirt       0.78      0.77      0.78      1809
+     Sneaker       0.96      0.96      0.96      1794
+         Bag       0.98      0.98      0.98      1807
+  Ankle boot       0.97      0.97      0.97      1796
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.86      0.85      1000
+     Trouser       0.99      0.97      0.98      1000
+    Pullover       0.87      0.88      0.87      1000
+       Dress       0.91      0.91      0.91      1000
+        Coat       0.85      0.86      0.86      1000
+      Sandal       0.98      0.98      0.98      1000
+       Shirt       0.76      0.72      0.74      1000
+     Sneaker       0.95      0.97      0.96      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.91      0.91      0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+test Acc: 0.9097
+class wise accuracy: {'Pullover': 0.88, 'Coat': 0.862, 'Trouser': 0.975, 'Dress': 0.911, 'Sneaker': 0.967, 'Sandal': 0.978, 'Shirt': 0.722, 'T-shirt/top': 0.862, 'Bag': 0.979, 'Ankle boot': 0.961}
+
+With Normalization and weight Initialization
+Training complete in 7m 9s
+Best val Acc: 0.916389
+Best Classwise Accuracy:  {'Shirt': 0.7546115148127446, 'Pullover': 0.860347728547392, 'Sandal': 0.9784366576819407, 'Dress': 0.9162921348314607, 'Coat': 0.8821184510250569, 'T-shirt/top': 0.8718371837183718, 'Trouser': 0.9810690423162584, 'Ankle boot': 0.966120218579235, 'Sneaker': 0.9705063995548135, 'Bag': 0.9782850779510023}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.87      0.86      1818
+     Trouser       0.99      0.98      0.99      1796
+    Pullover       0.87      0.86      0.87      1783
+       Dress       0.90      0.92      0.91      1780
+        Coat       0.86      0.88      0.87      1756
+      Sandal       0.99      0.98      0.98      1855
+       Shirt       0.78      0.75      0.77      1789
+     Sneaker       0.95      0.97      0.96      1797
+         Bag       0.98      0.98      0.98      1796
+  Ankle boot       0.97      0.97      0.97      1830
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.84      0.85      0.85      1000
+     Trouser       0.99      0.98      0.99      1000
+    Pullover       0.88      0.86      0.87      1000
+       Dress       0.91      0.92      0.91      1000
+        Coat       0.85      0.88      0.86      1000
+      Sandal       0.98      0.98      0.98      1000
+       Shirt       0.76      0.73      0.74      1000
+     Sneaker       0.95      0.97      0.96      1000
+         Bag       0.97      0.98      0.98      1000
+  Ankle boot       0.97      0.96      0.96      1000
+
+   micro avg       0.91      0.91      0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+test Acc: 0.9092
+class wise accuracy: {'Shirt': 0.726, 'Pullover': 0.86, 'Sandal': 0.976, 'Dress': 0.918, 'Coat': 0.881, 'T-shirt/top': 0.851, 'Trouser': 0.978, 'Ankle boot': 0.956, 'Sneaker': 0.966, 'Bag': 0.98}
+
+With Normalization and weight Initialization and Random Erasing
+Training complete in 6m 56s
+Best val Acc: 0.886222
+Best Classwise Accuracy:  {'Pullover': 0.8396648044692737, 'Trouser': 0.9694570135746606, 'Coat': 0.8233983286908078, 'Ankle boot': 0.9530916844349681, 'Sandal': 0.9534492428491307, 'Sneaker': 0.9389013452914798, 'Dress': 0.8885824600110315, 'T-shirt/top': 0.843644544431946, 'Bag': 0.9701327433628318, 'Shirt': 0.6808864265927977}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.82      0.84      0.83      1778
+     Trouser       0.98      0.97      0.97      1768
+    Pullover       0.84      0.84      0.84      1790
+       Dress       0.88      0.89      0.88      1813
+        Coat       0.81      0.82      0.81      1795
+      Sandal       0.96      0.95      0.96      1783
+       Shirt       0.74      0.68      0.71      1805
+     Sneaker       0.93      0.94      0.93      1784
+         Bag       0.96      0.97      0.96      1808
+  Ankle boot       0.95      0.95      0.95      1876
+
+   micro avg       0.89      0.89      0.89     18000
+   macro avg       0.89      0.89      0.89     18000
+weighted avg       0.89      0.89      0.89     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.82      0.84      0.83      1000
+     Trouser       0.96      0.96      0.96      1000
+    Pullover       0.81      0.82      0.81      1000
+       Dress       0.87      0.88      0.87      1000
+        Coat       0.79      0.81      0.80      1000
+      Sandal       0.96      0.96      0.96      1000
+       Shirt       0.71      0.65      0.68      1000
+     Sneaker       0.94      0.93      0.93      1000
+         Bag       0.96      0.97      0.96      1000
+  Ankle boot       0.94      0.94      0.94      1000
+
+   micro avg       0.88      0.88      0.88     10000
+   macro avg       0.87      0.88      0.88     10000
+weighted avg       0.87      0.88      0.88     10000
+
+test Acc: 0.8760
+class wise accuracy: {'Pullover': 0.821, 'Trouser': 0.96, 'Coat': 0.806, 'Ankle boot': 0.945, 'Sandal': 0.962, 'Sneaker': 0.932, 'Dress': 0.879, 'T-shirt/top': 0.841, 'Bag': 0.966, 'Shirt': 0.648}
+
+With BN
+Training complete in 4m 18s
+Best val Acc: 0.882833
+Best Classwise Accuracy:  {'T-shirt/top': 0.8360200111172874, 'Bag': 0.961878453038674, 'Trouser': 0.9671658986175116, 'Coat': 0.8293204922418406, 'Pullover': 0.8307086614173228, 'Ankle boot': 0.9442927362097214, 'Sandal': 0.9463687150837988, 'Dress': 0.8911830357142857, 'Sneaker': 0.9323432343234324, 'Shirt': 0.6893640967923467}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.82      0.84      0.83      1799
+     Trouser       0.98      0.97      0.97      1736
+    Pullover       0.84      0.83      0.84      1778
+       Dress       0.87      0.89      0.88      1792
+        Coat       0.82      0.83      0.82      1869
+      Sandal       0.95      0.95      0.95      1790
+       Shirt       0.72      0.69      0.71      1777
+     Sneaker       0.92      0.93      0.92      1818
+         Bag       0.96      0.96      0.96      1810
+  Ankle boot       0.95      0.94      0.95      1831
+
+   micro avg       0.88      0.88      0.88     18000
+   macro avg       0.88      0.88      0.88     18000
+weighted avg       0.88      0.88      0.88     18000
+
+Testing complete in 0m 1s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.82      0.82      0.82      1000
+     Trouser       0.97      0.96      0.97      1000
+    Pullover       0.81      0.81      0.81      1000
+       Dress       0.86      0.87      0.87      1000
+        Coat       0.79      0.80      0.79      1000
+      Sandal       0.96      0.94      0.95      1000
+       Shirt       0.69      0.66      0.67      1000
+     Sneaker       0.91      0.93      0.92      1000
+         Bag       0.95      0.96      0.95      1000
+  Ankle boot       0.93      0.94      0.94      1000
+
+   micro avg       0.87      0.87      0.87     10000
+   macro avg       0.87      0.87      0.87     10000
+weighted avg       0.87      0.87      0.87     10000
+
+test Acc: 0.8702
+class wise accuracy: {'T-shirt/top': 0.825, 'Bag': 0.959, 'Trouser': 0.961, 'Coat': 0.797, 'Pullover': 0.814, 'Ankle boot': 0.941, 'Sandal': 0.943, 'Dress': 0.874, 'Sneaker': 0.932, 'Shirt': 0.656}
+
+
+
+With BN & DO
+Training complete in 4m 28s
+Best val Acc: 0.832167
+Best Classwise Accuracy:  {'Coat': 0.7860780984719864, 'Sandal': 0.8963344788087056, 'Ankle boot': 0.9286898839137645, 'Trouser': 0.947565543071161, 'Shirt': 0.48737650933040616, 'Dress': 0.8683333333333333, 'Bag': 0.9254054054054054, 'Sneaker': 0.871866295264624, 'T-shirt/top': 0.8511870295309786, 'Pullover': 0.7581267217630854}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.73      0.85      0.79      1727
+     Trouser       0.97      0.95      0.96      1869
+    Pullover       0.77      0.76      0.77      1815
+       Dress       0.83      0.87      0.85      1800
+        Coat       0.69      0.79      0.74      1767
+      Sandal       0.91      0.90      0.90      1746
+       Shirt       0.67      0.49      0.56      1822
+     Sneaker       0.87      0.87      0.87      1795
+         Bag       0.94      0.93      0.93      1850
+  Ankle boot       0.91      0.93      0.92      1809
+
+   micro avg       0.83      0.83      0.83     18000
+   macro avg       0.83      0.83      0.83     18000
+weighted avg       0.83      0.83      0.83     18000
+
+Testing complete in 0m 1s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.74      0.85      0.79      1000
+     Trouser       0.98      0.96      0.97      1000
+    Pullover       0.79      0.77      0.78      1000
+       Dress       0.84      0.86      0.85      1000
+        Coat       0.72      0.81      0.76      1000
+      Sandal       0.93      0.93      0.93      1000
+       Shirt       0.63      0.46      0.53      1000
+     Sneaker       0.90      0.90      0.90      1000
+         Bag       0.96      0.94      0.95      1000
+  Ankle boot       0.92      0.95      0.94      1000
+
+   micro avg       0.84      0.84      0.84     10000
+   macro avg       0.84      0.84      0.84     10000
+weighted avg       0.84      0.84      0.84     10000
+
+test Acc: 0.8432
+class wise accuracy: {'Coat': 0.806, 'Sandal': 0.929, 'Ankle boot': 0.947, 'Trouser': 0.959, 'Shirt': 0.46, 'Dress': 0.865, 'Bag': 0.945, 'Sneaker': 0.9, 'T-shirt/top': 0.851, 'Pullover': 0.77}
+
+
+2 Conv layers with random erasing
+Training complete in 33m 11s
+Best val Acc: 0.880556
+Best Classwise Accuracy:  {'T-shirt/top': 0.823694553621561, 'Shirt': 0.7059136920618008, 'Dress': 0.8698324022346369, 'Ankle boot': 0.9491812535290797, 'Sandal': 0.9530808366308648, 'Pullover': 0.8153153153153153, 'Coat': 0.8274360370168753, 'Sneaker': 0.9441734417344173, 'Bag': 0.9568868980963046, 'Trouser': 0.9700226244343891}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.83      0.82      0.83      1781
+     Trouser       0.97      0.97      0.97      1768
+    Pullover       0.83      0.82      0.82      1776
+       Dress       0.87      0.87      0.87      1790
+        Coat       0.79      0.83      0.81      1837
+      Sandal       0.96      0.95      0.96      1769
+       Shirt       0.73      0.71      0.72      1877
+     Sneaker       0.93      0.94      0.94      1845
+         Bag       0.96      0.96      0.96      1786
+  Ankle boot       0.95      0.95      0.95      1771
+
+   micro avg       0.88      0.88      0.88     18000
+   macro avg       0.88      0.88      0.88     18000
+weighted avg       0.88      0.88      0.88     18000
+
+Testing complete in 0m 9s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.82      0.84      1000
+     Trouser       0.98      0.97      0.98      1000
+    Pullover       0.85      0.83      0.84      1000
+       Dress       0.88      0.90      0.89      1000
+        Coat       0.79      0.85      0.82      1000
+      Sandal       0.96      0.96      0.96      1000
+       Shirt       0.72      0.68      0.70      1000
+     Sneaker       0.94      0.95      0.94      1000
+         Bag       0.96      0.97      0.96      1000
+  Ankle boot       0.96      0.95      0.96      1000
+
+   micro avg       0.89      0.89      0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+test Acc: 0.8894
+class wise accuracy: {'T-shirt/top': 0.823, 'Shirt': 0.682, 'Dress': 0.896, 'Ankle boot': 0.955, 'Sandal': 0.963, 'Pullover': 0.827, 'Coat': 0.853, 'Sneaker': 0.953, 'Bag': 0.968, 'Trouser': 0.974}
+
+
+2 conv layers without random erasing
+Training complete in 32m 59s
+Best val Acc: 0.914056
+Best Classwise Accuracy:  {'Sneaker': 0.9704406023424428, 'Pullover': 0.8714128035320088, 'Sandal': 0.9739033870072182, 'Ankle boot': 0.9614354579539368, 'Dress': 0.9268018018018018, 'Coat': 0.8621621621621621, 'Shirt': 0.7434435575826682, 'Bag': 0.9748883928571429, 'Trouser': 0.9795221843003413, 'T-shirt/top': 0.8742348358375069}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.87      0.86      1797
+     Trouser       0.99      0.98      0.98      1758
+    Pullover       0.86      0.87      0.86      1812
+       Dress       0.92      0.93      0.92      1776
+        Coat       0.87      0.86      0.87      1850
+      Sandal       0.98      0.97      0.98      1801
+       Shirt       0.77      0.74      0.76      1754
+     Sneaker       0.95      0.97      0.96      1793
+         Bag       0.98      0.97      0.98      1792
+  Ankle boot       0.97      0.96      0.97      1867
+
+   micro avg       0.91      0.91      0.91     18000
+   macro avg       0.91      0.91      0.91     18000
+weighted avg       0.91      0.91      0.91     18000
+
+Testing complete in 0m 9s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.86      0.88      0.87      1000
+     Trouser       0.99      0.97      0.98      1000
+    Pullover       0.85      0.87      0.86      1000
+       Dress       0.90      0.91      0.91      1000
+        Coat       0.85      0.86      0.85      1000
+      Sandal       0.98      0.98      0.98      1000
+       Shirt       0.77      0.71      0.74      1000
+     Sneaker       0.95      0.97      0.96      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.91      0.91      0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+test Acc: 0.9112
+class wise accuracy: {'Sneaker': 0.975, 'Pullover': 0.874, 'Sandal': 0.977, 'Ankle boot': 0.963, 'Dress': 0.913, 'Coat': 0.862, 'Shirt': 0.709, 'Bag': 0.981, 'Trouser': 0.974, 'T-shirt/top': 0.884}
+
+2Conv without RE and 4096 features
+Training complete in 38m 55s
+Best val Acc: 0.919556
+Best Classwise Accuracy:  {'Coat': 0.8714205502526671, 'Bag': 0.972640982691234, 'Dress': 0.9366391184573003, 'Shirt': 0.7967434025828186, 'Ankle boot': 0.9584269662921349, 'Sneaker': 0.9724366041896362, 'Trouser': 0.9826086956521739, 'T-shirt/top': 0.8531232414181205, 'Sandal': 0.9784172661870504, 'Pullover': 0.8693495038588754}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.89      0.85      0.87      1777
+     Trouser       1.00      0.98      0.99      1840
+    Pullover       0.88      0.87      0.87      1814
+       Dress       0.92      0.94      0.93      1815
+        Coat       0.87      0.87      0.87      1781
+      Sandal       0.99      0.98      0.98      1807
+       Shirt       0.76      0.80      0.78      1781
+     Sneaker       0.95      0.97      0.96      1814
+         Bag       0.98      0.97      0.98      1791
+  Ankle boot       0.97      0.96      0.97      1780
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 9s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.88      0.85      0.86      1000
+     Trouser       1.00      0.98      0.99      1000
+    Pullover       0.88      0.87      0.87      1000
+       Dress       0.91      0.93      0.92      1000
+        Coat       0.86      0.86      0.86      1000
+      Sandal       0.98      0.97      0.98      1000
+       Shirt       0.74      0.77      0.75      1000
+     Sneaker       0.94      0.97      0.95      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.95      0.97      1000
+
+   micro avg       0.91      0.91      0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+test Acc: 0.9137
+class wise accuracy: {'Coat': 0.865, 'Bag': 0.979, 'Dress': 0.932, 'Shirt': 0.766, 'Ankle boot': 0.954, 'Sneaker': 0.974, 'Trouser': 0.979, 'T-shirt/top': 0.849, 'Sandal': 0.973, 'Pullover': 0.866}
+
+
+VGG16_bn
+Training complete in 232m 7s
+Best val Acc: 0.944222
+Best Classwise Accuracy:  {'Dress': 0.9452574525745258, 'Ankle boot': 0.9642276422764228, 'Trouser': 0.9906232763375621, 'Shirt': 0.8624161073825504, 'Pullover': 0.9145394006659268, 'T-shirt/top': 0.884, 'Sandal': 0.9880043620501636, 'Coat': 0.9177001127395716, 'Bag': 0.9915302089215132, 'Sneaker': 0.9808773903262092}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.91      0.88      0.90      1750
+     Trouser       1.00      0.99      0.99      1813
+    Pullover       0.94      0.91      0.93      1802
+       Dress       0.93      0.95      0.94      1845
+        Coat       0.92      0.92      0.92      1774
+      Sandal       0.99      0.99      0.99      1834
+       Shirt       0.82      0.86      0.84      1788
+     Sneaker       0.96      0.98      0.97      1778
+         Bag       0.99      0.99      0.99      1771
+  Ankle boot       0.98      0.96      0.97      1845
+
+   micro avg       0.94      0.94      0.94     18000
+   macro avg       0.94      0.94      0.94     18000
+weighted avg       0.94      0.94      0.94     18000
+
+Testing complete in 0m 46s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.91      0.90      0.90      1000
+     Trouser       0.99      0.99      0.99      1000
+    Pullover       0.93      0.91      0.92      1000
+       Dress       0.94      0.94      0.94      1000
+        Coat       0.93      0.93      0.93      1000
+      Sandal       0.99      0.99      0.99      1000
+       Shirt       0.83      0.86      0.84      1000
+     Sneaker       0.96      0.98      0.97      1000
+         Bag       0.99      0.99      0.99      1000
+  Ankle boot       0.98      0.97      0.97      1000
+
+   micro avg       0.95      0.95      0.95     10000
+   macro avg       0.95      0.95      0.95     10000
+weighted avg       0.95      0.95      0.95     10000
+
+test Acc: 0.9463
+class wise accuracy: {'Dress': 0.945, 'Ankle boot': 0.971, 'Trouser': 0.989, 'Shirt': 0.859, 'Pullover': 0.913, 'T-shirt/top': 0.895, 'Sandal': 0.986, 'Coat': 0.93, 'Bag': 0.995, 'Sneaker': 0.98}
+
+
+novel
+Training complete in 36m 21s
+Best val Acc: 0.917389
+Best Classwise Accuracy:  {'Trouser': 0.9897629310344828, 'Sandal': 0.9764837625979843, 'Shirt': 0.7506925207756233, 'Pullover': 0.8873239436619719, 'Ankle boot': 0.968271954674221, 'Sneaker': 0.9601962922573609, 'T-shirt/top': 0.8846590909090909, 'Dress': 0.9163822525597269, 'Coat': 0.858411993337035, 'Bag': 0.9809949692565679}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.88      0.87      1760
+     Trouser       0.99      0.99      0.99      1856
+    Pullover       0.87      0.89      0.88      1846
+       Dress       0.91      0.92      0.92      1758
+        Coat       0.87      0.86      0.86      1801
+      Sandal       0.98      0.98      0.98      1786
+       Shirt       0.79      0.75      0.77      1805
+     Sneaker       0.96      0.96      0.96      1834
+         Bag       0.99      0.98      0.98      1789
+  Ankle boot       0.97      0.97      0.97      1765
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.88      0.86      1000
+     Trouser       0.99      0.98      0.98      1000
+    Pullover       0.85      0.88      0.87      1000
+       Dress       0.92      0.92      0.92      1000
+        Coat       0.84      0.86      0.85      1000
+      Sandal       0.98      0.98      0.98      1000
+       Shirt       0.77      0.71      0.74      1000
+     Sneaker       0.95      0.97      0.96      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.91      0.91      0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+test Acc: 0.9121
+class wise accuracy: {'Trouser': 0.982, 'Sandal': 0.981, 'Shirt': 0.708, 'Pullover': 0.878, 'Ankle boot': 0.961, 'Sneaker': 0.973, 'T-shirt/top': 0.878, 'Dress': 0.919, 'Coat': 0.863, 'Bag': 0.978}
+
+NOVEL WITH do
+Training complete in 10m 55s
+Best val Acc: 0.920333
+Best Classwise Accuracy:  {'Dress': 0.9250814332247557, 'Shirt': 0.7550675675675675, 'Ankle boot': 0.966532025389498, 'Bag': 0.9772095608671484, 'Coat': 0.8775395033860045, 'Trouser': 0.9846153846153847, 'Sandal': 0.9806736609607951, 'Pullover': 0.8875067604110329, 'Sneaker': 0.9774972557628979, 'T-shirt/top': 0.8688063063063063}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.87      0.87      0.87      1776
+     Trouser       0.99      0.98      0.99      1820
+    Pullover       0.87      0.89      0.88      1849
+       Dress       0.91      0.93      0.92      1842
+        Coat       0.87      0.88      0.88      1772
+      Sandal       0.98      0.98      0.98      1811
+       Shirt       0.78      0.76      0.77      1776
+     Sneaker       0.96      0.98      0.97      1822
+         Bag       0.98      0.98      0.98      1799
+  Ankle boot       0.98      0.97      0.97      1733
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 2s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.86      0.87      0.86      1000
+     Trouser       0.99      0.98      0.99      1000
+    Pullover       0.85      0.88      0.86      1000
+       Dress       0.92      0.92      0.92      1000
+        Coat       0.86      0.87      0.86      1000
+      Sandal       0.98      0.98      0.98      1000
+       Shirt       0.77      0.73      0.75      1000
+     Sneaker       0.95      0.98      0.97      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.92      0.92      0.92     10000
+   macro avg       0.91      0.92      0.91     10000
+weighted avg       0.91      0.92      0.91     10000
+
+test Acc: 0.9150
+class wise accuracy: {'Dress': 0.918, 'Shirt': 0.729, 'Ankle boot': 0.959, 'Bag': 0.985, 'Coat': 0.867, 'Trouser': 0.981, 'Sandal': 0.979, 'Pullover': 0.878, 'Sneaker': 0.984, 'T-shirt/top': 0.87}
+
+lower l2
+Training complete in 19m 24s
+Best val Acc: 0.918333
+Best Classwise Accuracy:  {'Dress': 0.9126321647189761, 'Shirt': 0.7680440771349862, 'Bag': 0.9797592997811816, 'T-shirt/top': 0.8715953307392996, 'Sneaker': 0.9746416758544653, 'Sandal': 0.9794520547945206, 'Pullover': 0.8706800445930881, 'Trouser': 0.9883720930232558, 'Ankle boot': 0.9642058165548099, 'Coat': 0.8754842280022136}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.87      0.87      0.87      1799
+     Trouser       0.99      0.99      0.99      1806
+    Pullover       0.87      0.87      0.87      1794
+       Dress       0.91      0.91      0.91      1797
+        Coat       0.85      0.88      0.86      1807
+      Sandal       0.98      0.98      0.98      1752
+       Shirt       0.79      0.77      0.78      1815
+     Sneaker       0.96      0.97      0.97      1814
+         Bag       0.98      0.98      0.98      1828
+  Ankle boot       0.98      0.96      0.97      1788
+
+   micro avg       0.92      0.92      0.92     18000
+   macro avg       0.92      0.92      0.92     18000
+weighted avg       0.92      0.92      0.92     18000
+
+Testing complete in 0m 3s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.86      0.86      0.86      1000
+     Trouser       0.99      0.98      0.99      1000
+    Pullover       0.86      0.88      0.87      1000
+       Dress       0.92      0.92      0.92      1000
+        Coat       0.86      0.87      0.86      1000
+      Sandal       0.99      0.98      0.98      1000
+       Shirt       0.76      0.74      0.75      1000
+     Sneaker       0.95      0.98      0.97      1000
+         Bag       0.98      0.98      0.98      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.92      0.92      0.92     10000
+   macro avg       0.91      0.92      0.91     10000
+weighted avg       0.91      0.92      0.91     10000
+
+test Acc: 0.9150
+class wise accuracy: {'Dress': 0.922, 'Shirt': 0.736, 'Bag': 0.98, 'T-shirt/top': 0.858, 'Sneaker': 0.978, 'Sandal': 0.981, 'Pullover': 0.88, 'Trouser': 0.981, 'Ankle boot': 0.964, 'Coat': 0.87}
+
+
+VGG with CAM
+Epoch 34/34
+----------
+Phase:  training
+train Loss: 0.1092 Acc: 0.9603
+class wise accuracy: {'Coat': 0.9481865284974094, 'T-shirt/top': 0.9181774809160306, 'Ankle boot': 0.9818094782192437, 'Pullover': 0.9390128144280968, 'Bag': 0.9973677913376405, 'Shirt': 0.8770607630711258, 'Sandal': 0.9947393591582975, 'Sneaker': 0.9838981014179283, 'Trouser': 0.9966769522905293, 'Dress': 0.9672952972069706}
+Phase:  validation
+val Loss: 0.1585 Acc: 0.9435
+class wise accuracy: {'Coat': 0.9099201824401368, 'T-shirt/top': 0.9026548672566371, 'Ankle boot': 0.9654226125137212, 'Pullover': 0.9367301231802911, 'Bag': 0.9972542559033498, 'Shirt': 0.830102622576967, 'Sandal': 0.9884488448844885, 'Sneaker': 0.9700924415443176, 'Trouser': 0.987129266927812, 'Dress': 0.9420209828823854}
+
+Training complete in 364m 4s
+Best val Acc: 0.948000
+Best Classwise Accuracy:  {'Coat': 0.9156214367160775, 'T-shirt/top': 0.9043141592920354, 'Ankle boot': 0.9676180021953897, 'Pullover': 0.9400895856662934, 'Bag': 0.9956068094453597, 'Shirt': 0.8529076396807298, 'Sandal': 0.9873487348734874, 'Sneaker': 0.9749864056552474, 'Trouser': 0.9927252378287633, 'Dress': 0.9442297073440088}
+Best Classification Report: 
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.91      0.90      0.91      1808
+     Trouser       1.00      0.99      0.99      1787
+    Pullover       0.92      0.94      0.93      1786
+       Dress       0.95      0.94      0.95      1811
+        Coat       0.92      0.92      0.92      1754
+      Sandal       0.99      0.99      0.99      1818
+       Shirt       0.86      0.85      0.85      1754
+     Sneaker       0.96      0.97      0.97      1839
+         Bag       0.99      1.00      0.99      1821
+  Ankle boot       0.98      0.97      0.97      1822
+
+   micro avg       0.95      0.95      0.95     18000
+   macro avg       0.95      0.95      0.95     18000
+weighted avg       0.95      0.95      0.95     18000
+
+Testing complete in 0m 37s
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.89      0.90      0.90      1000
+     Trouser       0.99      0.99      0.99      1000
+    Pullover       0.91      0.93      0.92      1000
+       Dress       0.94      0.94      0.94      1000
+        Coat       0.93      0.93      0.93      1000
+      Sandal       1.00      0.99      0.99      1000
+       Shirt       0.85      0.82      0.83      1000
+     Sneaker       0.96      0.98      0.97      1000
+         Bag       0.99      1.00      0.99      1000
+  Ankle boot       0.98      0.96      0.97      1000
+
+   micro avg       0.94      0.94      0.94     10000
+   macro avg       0.94      0.94      0.94     10000
+weighted avg       0.94      0.94      0.94     10000
+
+test Acc: 0.9439
+class wise accuracy: {'Coat': 0.928, 'T-shirt/top': 0.901, 'Ankle boot': 0.965, 'Pullover': 0.929, 'Bag': 0.996, 'Shirt': 0.823, 'Sandal': 0.986, 'Sneaker': 0.984, 'Trouser': 0.99, 'Dress': 0.937}
