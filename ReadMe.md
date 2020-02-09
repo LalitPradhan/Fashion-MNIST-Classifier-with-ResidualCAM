@@ -12,13 +12,13 @@ This library does object classification on Fashion MNIST dataset and creates Cla
 - Matplotlib (>=3.0.3)
 
 ## Training Circumstances
-All models were trained on a Nvidia 1080 Ti 12 GB GPU with 16 GB CPU memory on Ubuntu 16.04
+All models were trained on a Nvidia 1080 Ti 12 GB GPU with 16 GB CPU memory on Ubuntu 16.04 annd CUDA 9.2
 
 ## Description of Architecture
 The proposed Network is inspired to visualize the discriminating feature on the pixels as proposed in the paper [Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150). It uses Global Average Pooling (GAP) layer to generate Class Activation Maps (CAM) which indicate the discriminative regions in an image during classification. The base architecture use is VGG16 with Batch Normalization. The vgg16_bn network if used directly for classification reaches an overall accuracy of 94.63% on the 10000 test images. Implementing the GAP paper by itself doesn't reach a good accuracy for classification as the FC layers are replaced by GAP in the original vgg architecture which reduce the number of hidden units in FC layer. To this end a hybrid architecture is proposed that uses the qualities from both the paper. I chose to use a CAM network as the challenge required to make a video tool to classify the object as well with assistance from a object detector library. From CAMs, one could generate rough bounding boxes as done in the original paper [implementation](https://github.com/metalbubble/CAM/blob/master/generate_bbox.m) Further one can segment the pixel level data using IRNet as described in the [paper](https://arxiv.org/pdf/1904.05044.pdf). (I wasn't able to make the bounding box from IRNet owing to time constraints, but since I have implemented it in the past I can be sure it works). Here is how the proposed architecture looks like:
 ![alt text](https://github.com/LalitPradhan/Fashion-MNIST-Classifier-with-ResidualCAM/blob/master/misc/Architecture.png)
 
-Proposed architecture learns the classifier and CAM simultaneously with a residual skip connection between the VGG final output layer and CAM's final output layer as shown above. Instead of adding the residual connection as propsed in Resnet, an element wise matrix multiplication is performed. This would ensire during backpropagation that the CAM network during backpropagation is heavily dependent on the classifier vgg network (differentiation of product of two functions rule) and forces the CAM network to learn as much as the classifier network. (Note: I haven't seen till date any paper using elementwise product instead of addition to my knowledge). The propsed architecture is inspired from VGG, CAM and Resnet with matrix multiplication instead of addition in residual connections.
+Proposed architecture learns the classifier and CAM simultaneously with a residual skip connection between the VGG final output layer and CAM's final output layer as shown above. Instead of adding the residual connection as propsed in Resnet, an element wise matrix multiplication is performed. This would ensure during backpropagation that the CAM network during backpropagation is heavily dependent on the classifier vgg network (differentiation of product of two functions rule) and forces the CAM network to learn as much as the classifier network. (Note: I haven't seen till date any paper using elementwise product instead of addition to my knowledge). The propsed architecture is inspired from VGG, CAM and Resnet with matrix multiplication instead of addition in residual connections.
 
 The dot product between the GAP output and features extracted isn't a part of the training but is used for the generation of CAMs. 
 
@@ -39,6 +39,10 @@ The dot product between the GAP output and features extracted isn't a part of th
 
 The training summary of the architecture proposed above is as follows:
 ![alt text](https://github.com/LalitPradhan/Fashion-MNIST-Classifier-with-ResidualCAM/blob/master/misc/trainingSummary.png)
+
+The different metrics for the proposed architecture are as follows:
+![alt text](https://github.com/LalitPradhan/Fashion-MNIST-Classifier-with-ResidualCAM/blob/master/misc/Metrics.gif)
+
 Detailed summaries of all networks can be found [here](https://github.com/LalitPradhan/Fashion-MNIST-Classifier-with-ResidualCAM/blob/master/misc/summary.txt)
 
 ## Code Description
